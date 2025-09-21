@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
-        // PERBAIKAN: Gunakan extension function navigateUp dengan appBarConfiguration
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }
