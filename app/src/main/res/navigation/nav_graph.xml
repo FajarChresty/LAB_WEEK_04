@@ -6,6 +6,37 @@
     app:startDestination="@id/favoritesFragment">
 
     <fragment
+        android:id="@+id/favoritesFragment2"
+        android:name="com.example.lab_week_04.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <action
+        android:id="@+id/action_listFragment_to_detailFragment"
+        app:destination="@id/detailFragment" />
+    <fragment
+        android:id="@+id/cafeFragment3"
+        android:name="com.example.lab_week_04.CafeFragment"
+        android:label="fragment_cafe"
+        tools:layout="@layout/fragment_cafe" />
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.example.lab_week_04.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment2"
+        android:name="com.example.lab_week_04.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.lab_week_04.DetailFragment"
         android:label="fragment_detail"
@@ -28,5 +59,10 @@
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/cafeFragment2"
+        android:name="com.example.lab_week_04.CafeFragment"
+        android:label="fragment_cafe"
+        tools:layout="@layout/fragment_cafe" />
 
 </navigation>

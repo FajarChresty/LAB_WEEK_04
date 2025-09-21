@@ -4,38 +4,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="70dp"
-    android:clipToPadding="false"
-    android:paddingTop="@dimen/action_bar_height"
-    tools:context=".FavoritesFragment">
-
+    tools:context=".FavoritesFragment"
+    android:padding="12dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewFavorites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:text="@string/coffee_favorites" />
+            android:textSize="24sp"
+            android:text="@string/coffee_favorites"
+            android:paddingStart="8dp"
+            android:gravity="start"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginVertical="12dp"
-            android:background="?android:attr/dividerVertical" />
+        android:background="?android:attr/dividerVertical" />
 
         <TextView
-            android:id="@+id/latte_fav"
+            android:id="@+id/latte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textSize="18sp"
-            android:text="@string/latte_title"
-            android:drawablePadding="10dp"
-            app:drawableStartCompat="@drawable/favorite_menu" />
+            android:padding="8dp"
+        android:text="@string/latte_title"
+        app:drawableStartCompat="@drawable/favorite"
+        android:drawablePadding="8dp"
+        android:gravity="start"/>
     </LinearLayout>
 </ScrollView>

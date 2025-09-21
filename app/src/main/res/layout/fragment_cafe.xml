@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListFragment"
+    tools:context=".CafeFragment"
     android:padding="12dp">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,38 +14,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-        android:text="@string/coffee_list"
-        android:paddingStart="8dp"
-        android:gravity="start"/>
+            android:text="@string/cafe_list"
+            android:paddingStart="8dp"
+            android:gravity="start"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginVertical="12dp"
-        android:background="?android:attr/dividerVertical" />
+            android:background="?android:attr/dividerVertical" />
 
         <TextView
-            android:id="@+id/affogato"
+            android:id="@+id/starbucks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-        android:text="@string/affogato_title"
-        android:gravity="start"/>
+            android:text="@string/starbucks_title"
+            android:gravity="start"/>
 
         <TextView
-            android:id="@+id/americano"
+            android:id="@+id/janjijima"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-        android:text="@string/americano_title"
-        android:gravity="start"/>
+            android:text="@string/janjijima_title"
+            android:gravity="start"/>
 
         <TextView
-            android:id="@+id/latte"
+            android:id="@+id/kopikenangan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-        android:text="@string/latte_title"
-        android:gravity="start"/>
+            android:text="@string/kopikenangan_title"
+            android:gravity="start"/>
     </LinearLayout>
 </ScrollView>
